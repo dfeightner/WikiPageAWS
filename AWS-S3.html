@@ -29,28 +29,28 @@
                 <div class="documentation-sidebar__menu">
                     <ul>
                         <li class="menu-item">
-                            <a href="#">Getting Started</a>
+                            <a href="GettingStarted.html">Getting Started</a>
                         </li>
                         <li class="menu-item">
-                            <a href="./AWS.html">AWS Rescources</a>
+                            <a href="./AWSResources.html">AWS Rescources</a>
                             <ul>
                                 <li class="menu-item">
-                                    <a href="#">Introduction to Advanced Configuration</a>
+                                    <a href="AWS-CloudPractitioner.html">AWS Certified Cloud Practitioner Resources</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Understanding the Purpose of Advanced Configuration</a>
+                                    <a href="AWS-SolutionsArchitect.html">AWS Certified Solutions Architect</a>
                                 </li>
                                 <li class="menu-item current-menu-item">
-                                    <a href="#">Key Components of Advanced Configuration</a>
+                                    <a href="AWS-S3.html">S3 Buckets</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Best Practices for Advanced Configuration</a>
+                                    <a href="AWS-Route53.html">Route 53 and Hosted Zones</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Security Considerations for Advanced Configuration</a>
+                                    <a href="AWS-Cloudfront.html">CloudFront Distributions</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Advanced Configuration Tools and Techniques</a>
+                                    <a href="AWS-CertM.html">AWS Certificate Manager</a>
                                 </li>
                             </ul>
                         </li>
@@ -58,19 +58,19 @@
                             <a href="./InternResources.html">Intern Resources</a>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">Advanced Configuration</a>
+                            <a href="ADP.html">ADP</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">File Downloads</a>
+                            <a href="Unanet.html">Unanet</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">How to Articles</a>
+                            <a href="HowToArticles.html">How to Articles</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Developer APIs</a>
+                            <a href="Teams.html">Microsoft 365</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Terms & Policies</a>
+                            <a href="Terms&Policies.html">Terms & Policies</a>
                         </li>
                     </ul>
                 </div>
@@ -86,29 +86,23 @@
                         <a href="./index.html">Knowledge Base</a>
                     </li>
                     <li>
-                        <a href="#"></a>
+                        <a href="AWSResources.html">AWS Resources</a>
                     </li>
-                    <li>AWS Resources</li>
+                    <li>AWS S3</li>
                 </ul>
 
                 <div class="text-content">
-                    <h1>Key Components of Advanced Configuration</h1>
-                    <p>
-                        Key Components of Advanced Configuration refer to the specific elements that make up the advanced
-                        configuration settings of a system, software, or application. These components typically
-                        include:
-                    </p>
+                    <h1>AWS S3 Resources and Information</h1>
+
 
                     <br>
-                    <h2>1. Configuration Files</h2>
-                    <p>
-                        These are the files that store the settings and configurations of an application or system. In
-                        advanced configuration, users may need to access and modify these files to customize the settings
-                        beyond the basic options available in the user interface.
-                    </p>
+                    <h2>What is AWS S3?</h2>
+                        <p>
+                            <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">Amazon Simple Storage Service (Amazon S3)</a> is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides management features so that you can optimize, organize, and configure access to your data to meet your specific business, organizational, and compliance requirements.
+                        </p>
 
                     <br>
-                    <h2>2. Command Line Interface (CLI)</h2>
+                    <h4>S3 Storage classes</h4>
                     <p>
                         CLI is a text-based interface that allows users to interact with an application or system using
                         commands. Advanced users often prefer the CLI over the graphical user interface (GUI) to perform
@@ -116,7 +110,7 @@
                     </p>
 
                     <br>
-                    <h2>3. Scripting Languages</h2>
+                    <h4>Access Management and Security</h4>
                     <p>
                         Scripting languages like Python, Perl, or Bash allow users to automate complex configuration tasks by
                         writing scripts that can execute multiple commands in a sequence. These languages are often used in
@@ -124,7 +118,7 @@
                     </p>
 
                     <br>
-                    <h2>4. Plugins and Extensions</h2>
+                    <h4>Storage Logging and monitoring</h4>
                     <p>
                         Plugins and extensions are add-ons that can extend the functionality of an application or system.
                         Advanced users can use plugins and extensions to add advanced configuration options or integrate
@@ -132,17 +126,21 @@
                     </p>
 
                     <br>
-                    <h2>5. APIs and SDKs</h2>
+                    <h4>How does S3 work?</h4>
                     <p>
-                        APIs (Application Programming Interfaces) and SDKs (Software Development Kits) allow developers to
-                        access and customize the configuration of an application or system programmatically. Advanced users
-                        can leverage these tools to integrate an application or system with other tools and automate
-                        advanced configuration tasks.
+                        Amazon S3 is an object storage service that stores data as objects within buckets. An object is a file and any metadata that describes the file. A bucket is a container for objects.
+                    </p>
+
+                    <p>  
+                        To store your data in Amazon S3, you first create a bucket and specify a bucket name and AWS Region. Then, you upload your data to that bucket as objects in Amazon S3. Each object has a key (or key name), which is the unique identifier for the object within the bucket.
                     </p>
                     <p>
-                        Understanding these key components is essential for users who want to perform advanced configuration
-                        tasks beyond the basic sevttings available in the user interface
+                        S3 provides features that you can configure to support your specific use case. For example, you can use S3 Versioning to keep multiple versions of an object in the same bucket, which allows you to restore objects that are accidentally deleted or overwritten.
+                    </P>
+                    <p>
+                        Buckets and the objects in them are private and can be accessed only if you explicitly grant access permissions. You can use bucket policies, AWS Identity and Access Management (IAM) policies, access control lists (ACLs), and S3 Access Points to manage access.
                     </p>
+                    
                 </div>
             </div>
         </div>
